@@ -70,13 +70,22 @@
             <div id="posts">
             </div>
             <div id="liked">
-                <h1>No Liked posts</h1>
             </div>
-
             <div id="reported">
-                <h1>No Reported posts</h1>
             </div>
         </main>
+        <section id="FAQ">
+            <div class="questions">
+                <h2>What does javascript event loop do?</h2>
+                <p>In every browser there is a javascript engine like V8 enigne for chrome. javascript engine has two parts Heap and call Stack and some assistance named webAPIs and callback Queue.The event loop is a process that waits for the Call Stack to be clear before pushing callbacks from the callback Queue to
+                the Call Stack. Once the Stack is clear, the event loop triggers and checks the callback Queue for available callbacks. If
+                there are any, it pushes it to the Call Stack, waits for the Call Stack to be clear again, and repeats the same process over and over like a loop. so thats what javascript event loop do.</p>
+                <h2>Difference Between Session storage and Local Storage?</h2>
+                <p><span > <strong>Session storage:</strong>  <br>The data stored in Session storage get deleted automaticaly after the page session end. </span><span> <strong>Local Storage:</strong>  <br>The data stored in local storage doesn't get deleted automaticaly and has no expired date. unless the cache is cleared.</span></p>
+            </div>
+            
+        </section>
+
         <footer></footer>
 
         <!-- add javascript  file  -->
